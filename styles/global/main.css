@@ -1,0 +1,29 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main_content {
+  margin-top: 104px;
+}
+.main_reserv_container{
+  margin-top: -50px;
+}
+.main_container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 60;
+}
+.main_container_platform {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto ;
+  z-index: 60;
+}
+.splide_container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}

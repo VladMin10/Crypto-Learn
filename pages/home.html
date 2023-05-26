@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Home</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles/global/normalize.css">
+  <link rel="stylesheet" href="../styles/global/main.css">
+  <link rel="stylesheet" href="../styles/global/variables.css">
+  <link rel="stylesheet" href="../styles/partials/header.css">
+  <link rel="stylesheet" href="../styles/partials/sideBar.css">
+  <link rel="stylesheet" href="../styles/partials/footer.css">
+  <link rel="stylesheet" href="../styles/pages/home.css">
+  <link rel="stylesheet" href="../styles/global/media.css">
+  <link rel="stylesheet" href="../styles/animations/headerHamburger.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+</head>
+
+<body id="body">
+  <div class="wrapper">
+    <header id="header">
+      <div class="container">
+        <div class="header_logo_content">
+          <div class="header_logo">
+            <div>
+              <img class="header_logo_img" src="../images/logotype.png" alt="Логотип" />
+            </div>
+          </div>
+          <nav>
+            <ul class="nav_links">
+              <li class="mp_nav_li">
+                <p class="mp_nav_link">Catalog</p>
+                <div id="mp_nav_li_dropdown" class="mp_nav_li_dropdown">
+                  <ul class="mp_ul_dropdown">
+                    <li class="mp_li_dropdown"><a href="../pages/reserv1.html">Block 1</a></li>
+                    <li class="mp_li_dropdown"><a href="../pages/reserv.html">Block 2</a></li>
+                    <li class="mp_li_dropdown"><a href="../pages/reserv2.html">Block 3</a></li>
+                    <li class="mp_li_dropdown"><a href="../pages/reserv3.html">Block 4</a></li>
+                    <li class="mp_li_dropdown"><a href="../pages/reserv4.html">Block 5</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a class="mp_nav_link" href="https://cryptolearnnn.blogspot.com/">Discuss</a></li>
+              
+              <li><a class="mp_nav_link" href="./contacts.html">Contacts</a></li>
+              <li><a class="mp_nav_link" href="./offices.html">Our Offices</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header_phone_content">
+          <a class="header_phone" href="tel:380123456313">+(380) 123456313</a>
+          <button class="header_btn">Call us </button>
+          <button id="hamburger" class="hamburger_navbar" onclick="openCloseSideBar()" aria-label="Main Menu">
+            <svg width="43" height="43" viewBox="0 0 100 100">
+              <path class="line line1"
+                d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+              <path class="line line2" d="M 20,50 H 80" />
+              <path class="line line3"
+                d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <aside class="side_bar">
+      <div id="side_bar_overlay" class="side_bar_overlay" onclick="openCloseSideBar()"></div>
+      <div id="side_bar_content" class="side_bar_content">
+        <ul class="side_bar_links">
+          <li class="mp_side_bar_li">
+            <p class="mp_side_bar_link">Catalog</p>
+            <ul class="mp_side_bar_dropdown">
+              <li class="side_bar_li_dropdown"><a href="../pages/reserv1.html">Block 1</a></li>
+              <li class="side_bar_li_dropdown"><a href="../pages/reserv.html">Block 2</a></li>
+              <li class="side_bar_li_dropdown"><a href="../pages/reserv2.html">Block 3</a></li>
+              <li class="side_bar_li_dropdown"><a href="../pages/reserv3.html">Block 4</a></li>
+              <li class="side_bar_li_dropdown"><a href="../pages/reserv4.html">Block 5</a></li>
+            </ul>
+          </li>
+          <li><a class="mp_nav_link" href="https://cryptolearnnn.blogspot.com/">Discuss</a></li>
+          <li><a class="mp_side_bar_link" href="#">Contacts</a></li>
+          <li><a class="mp_side_bar_link" href="#">Our Offices</a></li>
+        </ul>
+        <button class="side_bar_btn">Call us</button>
+      </div>
+    </aside>
+
+    <main>
+      <section class="hero_section">
+        <div class="paralax_content_image">
+          <img id="paralaxImage" class="paralax_image" src="../images/font.jpeg" alt="paralax_image" />
+          <div class="paralax_overlay"></div>
+        </div>
+        <div class="main_container">
+          <div class="content_rent">
+            <p class="rent_title">The best way to learn Crypto</p>
+            <p class="rent_sub_title">We bring the new way of learning about crypto, providing customers with an inspiring way to learn about cryptocurrencies.</p>
+            <button class="rent_button from-top" type="button">
+              <a href="../pages/rent.html">Start learning now!</a>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <article class="article_splide_slider">
+        <div class="splide_container">
+          <p class="splide_title">Our Courses</p>
+          <div class="splide">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide content_rent_card">
+                  <div class="rent_card">
+                    <div class="rent_card_title_image">
+                      <p>Block 2</p>
+                    </div>
+                    <img class="rent_card_image" src="../images/python.jpeg" width="220"
+                      height="120" alt="Smille">
+                    <div class="rent_content_list">
+                      <div class="list_container">
+                        <img class="rent_list_svg" src="../images/diff.png" width="28" height="28" alt="Benz">
+                        <p class="rent_list_title">Beginner</p>
+                      </div>
+                      <div class="list_container">
+                        <img class="rent_list_svg" src="../images/time.png" width="28" height="28" alt="Benz">
+                        <p class="rent_list_title">3 weeks</p>
+                      </div>
+                      <div class="list_container">
+                        <img class="rent_list_svg" src="../images/online.png" width="28" height="28" alt="Benz">
+                        <p class="rent_list_title">Online</p>
+                      </div>
+                      <div class="list_container">
+                        <img class="rent_list_svg" src="../images/support.png" width="28" height="28" alt="Benz">
+                        <p class="rent_list_title">Included</p>
+                      </div>
+                    </div>
+                    <div class="rent_card_prices">
+                      <div class="rent_card_tile">
+                        <p class="rent_card_day">Separate module</p>
+                        <p class="rent_card_price">$9</p>
+                      </div>
+                      <div class="rent_card_tile">
+                        <p class="rent_card_day">3 months subscription</p>
+                        <p class="rent_card_price">$20</p>
+                      </div>
+                      <div class="rent_card_tile">
+                        <p class="rent_card_day">6 months subscription</p>
+                        <p class="rent_card_price">$35</p>
+                      </div>
+                      <div class="rent_card_tile">
+                        <p class="rent_card_day">1 year subscription</p>
+                        <p class="rent_card_price">$50</p>
+                      </div>
+                    </div>
+
+                    <button class="rent_card_confirm" type="button">
+                      <a href="../pages/reserv.html">Reserve a place</a>
+                    </button>
+                  </div>
+                </li>
+                <li class="splide__slide content_rent_card">
+                  <div class="rent_card">
+                    <div class="rent_card_title_image">
+                      <p>Block 3</p>
+                    </div>
+                    <img class="rent_card_image" src="../images/bull.png" width="220"
+                      height="120" alt="Smille">
+                    <div class="rent_content_list">
+                      <div class="list_container">
+                        <img class="rent_list_svg" src="../images/diff.png" width="28" height="28" alt="Benz">
+                        <p class="rent_list_title">Intermediate</p>
+                      </div>
+                      <div class="list_container">
+                        <img class="rent_list_svg" src="../images/time.png" width="28" height="28" alt="Benz">
+                        <p class="rent_list_title">3 weeks</p>
+                      </div>
+                      <div class="list_container">
+                        <img class="rent_list_svg" src="../images/online.png" width="28" height="28" alt="Benz">
+                        <p class="rent_list_title">Online</p>
+                      </div>
+                      <div class="list_container">
+                        <img class="rent_list_svg" src="../images/support.png" width="28" height="28" alt="Benz">
+                        <p class="rent_list_title">Included</p>
+                      </div>
+                    </div>
+                    <div class="rent_card_prices">
+                      <div class="rent_card_tile">
+                        <p class="rent_card_day">Separate module</p>
+                        <p class="rent_card_price">$9</p>
+                      </div>
+                      <div class="rent_card_tile">
+                        <p class="rent_card_day">3 months subscription</p>
+                        <p class="rent_card_price">$20</p>
+                      </div>
+                      <div class="rent_card_tile">
+                        <p class="rent_card_day">6 months subscription</p>
+                        <p class="rent_card_price">$35</p>
+                      </div>
+                      <div class="rent_card_tile">
+                        <p class="rent_card_day">1 year subscription</p>
+                        <p class="rent_card_price">$50</p>
+                      </div>
+                    </div>
+
+                    <button type="button" class="rent_card_confirm"><a href="../pages/reserv2.html">Reserve a place</a></button>
+                  </div>
+                </li>
+                <li class="splide__slide content_rent_card">
+                  <div class="rent_card">
+                    <div class="rent_card_title_image">
+                      <p>Block 4</p>
+                    </div>
+                    <img class="rent_card_image" src="../images/psycho.png" width="220"
+                      height="120" alt="Smille">
+                    <div class="rent_content_list">
+                      <div class="list_container">
+                        <img class="rent_list_svg" src="../images/diff.png" width="28" height="28" alt="Benz">
+                        <p class="rent_list_title">Advanced</p>
+                      </div>
+                      <div class="list_container">
+                        <img class="rent_list_svg" src="../images/time.png" width="28" height="28" alt="Benz">
+                        <p class="rent_list_title">4 weeks</p>
+                      </div>
+                      <div class="list_container">
+                        <img class="rent_list_svg" src="../images/online.png" width="28" height="28" alt="Benz">
+                        <p class="rent_list_title">Offline</p>
+                      </div>
+                      <div class="list_container">
+                        <img class="rent_list_svg" src="../images/support.png" width="28" height="28" alt="Benz">
+                        <p class="rent_list_title">Included</p>
+                      </div>
+                    </div>
+                    <div class="rent_card_prices">
+                      <div class="rent_card_tile">
+                        <p class="rent_card_day">Separate module</p>
+                        <p class="rent_card_price">$9</p>
+                      </div>
+                      <div class="rent_card_tile">
+                        <p class="rent_card_day">3 months subscription</p>
+                        <p class="rent_card_price">$20</p>
+                      </div>
+                      <div class="rent_card_tile">
+                        <p class="rent_card_day">6 months subscription</p>
+                        <p class="rent_card_price">$35</p>
+                      </div>
+                      <div class="rent_card_tile">
+                        <p class="rent_card_day">1 year subscription</p>
+                        <p class="rent_card_price">$50</p>
+                      </div>
+                    </div>
+
+                    <button type="button" class="rent_card_confirm"><a href="../pages/reserv3.html">Reserve a place</a></button>
+                  </div>
+                </li>
+                <li class="splide__slide content_rent_card">
+                  <div class="rent_card">
+                    <div class="rent_card_title_image">
+                      <p>Block 5</p>
+                    </div>
+                    <img class="rent_card_image" src="../images/nft.png" width="220"
+                      height="120" alt="Smille">
+                    <div class="rent_content_list">
+                      <div class="list_container">
+                        <img class="rent_list_svg" src="../images/diff.png" width="28" height="28" alt="Benz">
+                        <p class="rent_list_title">Intermediate</p>
+                      </div>
+                      <div class="list_container">
+                        <img class="rent_list_svg" src="../images/time.png" width="28" height="28" alt="Benz">
+                        <p class="rent_list_title">5 weeks</p>
+                      </div>
+                      <div class="list_container">
+                        <img class="rent_list_svg" src="../images/online.png" width="28" height="28" alt="Benz">
+                        <p class="rent_list_title">Offline</p>
+                      </div>
+                      <div class="list_container">
+                        <img class="rent_list_svg" src="../images/support.png" width="28" height="28" alt="Benz">
+                        <p class="rent_list_title">Included</p>
+                      </div>
+                    </div>
+                    <div class="rent_card_prices">
+                      <div class="rent_card_tile">
+                        <p class="rent_card_day">Separate module</p>
+                        <p class="rent_card_price">$9</p>
+                      </div>
+                      <div class="rent_card_tile">
+                        <p class="rent_card_day">3 months subscription</p>
+                        <p class="rent_card_price">$20</p>
+                      </div>
+                      <div class="rent_card_tile">
+                        <p class="rent_card_day">6 months subscription</p>
+                        <p class="rent_card_price">$35</p>
+                      </div>
+                      <div class="rent_card_tile">
+                        <p class="rent_card_day">1 year subscription</p>
+                        <p class="rent_card_price">$50</p>
+                      </div>
+                    </div>
+                    <button type="button" class="rent_card_confirm"><a href="../pages/reserv4.html">Reserve a place</a></button>
+                  </div>
+                </li>
+                <li class="splide__slide content_rent_card">
+                  <div class="rent_card">
+                    <div class="rent_card_title_image">
+                      <p>Block 1</p>
+                    </div>
+                    <img class="rent_card_image" src="../images/python4.png" width="220"
+                      height="120" alt="Smille">
+                    <div class="rent_content_list">
+                      <div class="list_container">
+                        <img class="rent_list_svg" src="../images/diff.png" width="28" height="28" alt="Benz">
+                        <p class="rent_list_title">Beginner</p>
+                      </div>
+                      <div class="list_container">
+                        <img class="rent_list_svg" src="../images/time.png" width="28" height="28" alt="Benz">
+                        <p class="rent_list_title">5 weeks</p>
+                      </div>
+                      <div class="list_container">
+                        <img class="rent_list_svg" src="../images/online.png" width="28" height="28" alt="Benz">
+                        <p class="rent_list_title">Online</p>
+                      </div>
+                      <div class="list_container">
+                        <img class="rent_list_svg" src="../images/support.png" width="28" height="28" alt="Benz">
+                        <p class="rent_list_title">Included</p>
+                      </div>
+                    </div>
+                    <div class="rent_card_prices">
+                      <div class="rent_card_tile">
+                        <p class="rent_card_day">Separate module</p>
+                        <p class="rent_card_price">$9</p>
+                      </div>
+                      <div class="rent_card_tile">
+                        <p class="rent_card_day">3 months subscription</p>
+                        <p class="rent_card_price">$20</p>
+                      </div>
+                      <div class="rent_card_tile">
+                        <p class="rent_card_day">6 months subscription</p>
+                        <p class="rent_card_price">$35</p>
+                      </div>
+                      <div class="rent_card_tile">
+                        <p class="rent_card_day">1 year subscription</p>
+                        <p class="rent_card_price">$50</p>
+                      </div>
+                    </div>
+
+                    <button type="button" class="rent_card_confirm"><a href="../pages/reserv1.html">Reserve a place</a></button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <section class="section_app_company">
+        <p class="section_app_company_title">CryptoLearn Company</p>
+
+        <div class="main_container">
+          <div class="content_company_card">
+            <div class="company_card">
+              <img class="company_card_image" src="../images/tailored.png" alt="">
+              <p class="company_card_title">Tailored to you</p>
+              <p class="company_card_desc">No matter your experience level, you'll start to understand crypto within minutes of starting your first course.</p>
+            </div>
+            <div class="company_card">
+              <img class="company_card_image" src="../images/bite.jpg" alt="">
+              <p class="company_card_title">Bite-sized</p>
+              <p class="company_card_desc">Go step-by-step through our unique courses. Assess what you’ve learned with in-lesson quizzes, and gradually advance your skills with practice.</p>
+            </div>
+            <div class="company_card">
+              <img class="company_card_image" src="../images/courses.jpg" alt="">
+              <p class="company_card_title">More than 5 courses</p>
+              <p class="company_card_desc">We got everything you need.</p>
+            </div>
+            <div class="company_card">
+              <img class="company_card_image" src="../images/phone.jpg" alt="">
+              <p class="company_card_title">Learning on the go</p>
+              <p class="company_card_desc">Learn on the web or on the go. Sololearn is always ready for you and you'll never lose your place.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="section_app_company_platform">
+        <p class="section_app_company_title_platform">The perfect platform to boost your knowledge in Crypto</p>
+        <div class="main_container_platform">
+          <div class="content_company_card_platform">
+            <div class="company_card_platform">
+              <img class="company_card_image_platform" src="../images/student.jpg" alt="">
+              <p class="company_card_title_platform">Students</p>
+              <p class="company_card_desc_platform">Prepping for the big test or want to ace your first interview? Use CryptoLearn's real-world practice to reinforce what you've learned and get you ready for that big moment.</p>
+            </div>
+            <div class="company_card_platform">
+              <img class="company_card_image_platform" src="../images/pros.jpg" alt="">
+              <p class="company_card_title_platform">Professionals</p>
+              <p class="company_card_desc_platform">Go step-by-step through our unique courses. Assess what you’ve learned with in-lesson quizzes, and gradually advance your skills with practice.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="section_app_company">
+        <p class="section_app_company_title">Why <span class="crypto">Crypto?</span></p>
+      <div class="main_container">
+        <div class="content_company_card">
+          <div class="company_card">
+            <img class="company_card_image" src="../images/adopted.jpg" alt="">
+            <p class="company_card_title">It is becoming more widely adopted</p>
+            <p class="company_card_desc">As more businesses and individuals adopt cryptocurrency as a means of payment, it's important to have a basic understanding of how it works.</p>
+          </div>
+          <div class="company_card">
+            <img class="company_card_image" src="../images/popular.jpg" alt="">
+            <p class="company_card_title">It's promising</p>
+            <p class="company_card_desc">Cryptocurrency has been known to have a volatile market, but also has the potential for high returns. Learning about cryptocurrency can help individuals make informed investment decisions.</p>
+          </div>
+          <div class="company_card">
+            <img class="company_card_image" src="../images/fun.jpg" alt="">
+            <p class="company_card_title">It’s fun</p>
+            <p class="company_card_desc"> Imagine combining your passion and skill with your creativity, and making something new everyday!</p>
+          </div>
+          <div class="company_card">
+            <img class="company_card_image" src="../images/cyber.png" alt="">
+            <p class="company_card_title">If is safe</p>
+            <p class="company_card_desc"> With the rise of cyberattacks, it's important to have an understanding of how to protect oneself online. Learning about cryptocurrency can help individuals understand how to keep their digital assets secure.</p>
+          </div>
+          <div class="company_card">
+            <img class="company_card_image" src="../images/diverse.png" alt="">
+            <p class="company_card_title">Diversification</p>
+            <p class="company_card_desc"> Learning about cryptocurrencies can help people to diversify their investment portfolio and protect themselves against market volatility in traditional asset classes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+      <article class="news_article">
+        <div class="main_container">
+          <p class="article_title">Quick Updates</p>
+          <div class="news_content_card">
+            <div class="news_card">
+              <img class="news_card_image" src="lviv.png" alt="" />
+              <div class="content_title">
+                <p class="news_card_title">
+                  We opened 3 offices in Lviv!
+                </p>
+              </div>
+            </div>
+            <div class="news_card">
+              <img class="news_card_image" src="lviv.png" alt="" />
+              <div class="content_title">
+                <p class="news_card_title">
+                  We will announce a draw for monthly and annual subscriptions!
+                </p>
+              </div>
+            </div>
+            <div class="news_card">
+              <img class="news_card_image" src="lviv.png" alt="" />
+              <div class="content_title">
+                <p class="news_card_title">
+                  Follow our social media!!!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <section class="section_info">
+        <div class="main_container">
+          <p>To those who are just starting their journey into the world of cryptocurrencies, welcome! Learning about crypto can be a daunting task, but it is an exciting and rewarding journey that can open up a world of possibilities.</p>
+          <p>As you dive deeper into the world of crypto, it's important to remember that this technology is still in its early stages of development. There are risks involved, and it's crucial to exercise caution and do your own research before investing your hard-earned money.</p>
+          <p>Here are a few tips to help you get started:</p>
+          <p>Start with the basics - Understanding the basics of blockchain technology and how cryptocurrencies work is essential. Start with the fundamentals and work your way up.</p>
+          <p>Do your research - Always do your own research and make informed decisions. Don't rely solely on the opinions of others.</p>
+          <p>Keep your funds safe - Cryptocurrency wallets are essential for storing your funds securely.</p>
+          <p>Stay up-to-date - The world of crypto is constantly evolving. Stay informed and up-to-date on the latest developments, news, and trends.</p>
+        
+        
+          <p>Remember, investing in cryptocurrencies can be exciting and profitable, but it's also important to proceed with caution and make informed decisions. Good luck on your crypto journey!</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+          <div class="footer__top">
+              <div class="company__info">
+                  <h2 class="company__logo">CryptoLearn Company</h2>
+                  <p class="company__description">
+                    With a team of experienced educators and industry experts, the company offers a comprehensive curriculum that covers all aspects of the crypto landscape, from the basics of blockchain technology to advanced trading strategies.
+                  </p>
+                  <ul class="footer__list">
+                      <li class="footer__list-item">
+                          <a href="#" class="footer__list-link">
+                              <i class="ri-facebook-circle-line"></i>
+                          </a>
+                      </li>
+                      <li class="footer__list-item">
+                          <a href="#" class="footer__list-link">
+                              <i class="ri-instagram-line"></i>
+                          </a>
+                      </li>
+                      <li class="footer__list-item">
+                          <a href="#" class="footer__list-link">
+                              <i class="ri-twitter-line"></i>
+                          </a>
+                      </li>
+                  </ul>
+                  <span class="copyright">&copy;2023 CryptoLearn.All rights reserved.</span>
+              </div>
+
+              <div>
+                  <h6 class="footer__title">Beginner Courses</h6>
+                  <ul class="footer__list">
+                      <li class="footer__list-item">
+                          <a href="./reserv1.html" class="footer__list-link">Block 1</a>
+                      </li>
+                      <li class="footer__list-item">
+                          <a href="./reserv.html" class="footer__list-link">Block 2</a>
+                      </li>
+                      <li class="footer__list-item">
+                        <a href="https://www.instagram.com/" class="footer__list-link">Instagram</a>
+                      </li> 
+                      
+                  </ul>
+              </div>
+
+              <div>
+                  <h6 class="footer__title">Intermediate Courses</h6>
+                  <ul class="footer__list">
+                      <li class="footer__list-item">
+                          <a href="./reserv2.html" class="footer__list-link">Block 3</a>
+                      </li>
+                      <li class="footer__list-item">
+                          <a href="./reserv4.html" class="footer__list-link">Block 5</a>
+                      </li>
+                      <li class="footer__list-item">
+                        <a href="https://www.twitter.com/" class="footer__list-link">Twitter</a>
+                      </li> 
+                  </ul>
+              </div>
+
+              <div>
+                  <h6 class="footer__title">Advanced Courses</h6>
+                  <ul class="footer__list">
+                      <li class="footer__list-item">
+                          <a href="./reserv3.html" class="footer__list-link">Block 4</a>
+                          <li class="footer__list-item">
+                            <a href="https://www.youtube.com/" class="footer__list-link">Youtube</a>
+                          </li> 
+                      </li>
+                      
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </footer>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      new Splide('.splide', {
+        type: "loop",
+        perPage: 3,
+        gap: "2em",
+        autoplay: true,
+        interval: "3400",
+        speed: '400',
+        keyboard: "true",
+        updateOnMove: "true",
+        focus: "center",
+        classes: {
+          // Add classes for pagination.
+          pagination: 'splide__pagination your-class-pagination', // container
+          page: 'splide__pagination__page your-class-page', // each button
+        },
+        breakpoints: {
+          1000: {
+            perPage: 2
+          },
+          800: {
+            perPage: 1
+          },
+        }
+      }).mount();
+    });
+  </script>
+
+  <script src="../js/index.js"></script>
+  <script src="../js/home.js"></script>
+</body>
+
+</html>

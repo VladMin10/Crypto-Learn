@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Rent</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/global/normalize.css">
+  <link rel="stylesheet" href="../styles/global/main.css">
+  <link rel="stylesheet" href="../styles/global/variables.css">
+  <link rel="stylesheet" href="../styles/partials/header.css">
+  <link rel="stylesheet" href="../styles/partials/sideBar.css">
+  <link rel="stylesheet" href="../styles/partials/footer.css">
+  <link rel="stylesheet" href="../styles/pages/rent.css">
+  <link rel="stylesheet" href="../styles/global/media.css">
+  <link rel="stylesheet" href="../styles/animations/headerHamburger.css">
+</head>
+
+<body id="body">
+  <div class="wrapper">
+    <header id="header">
+      <div class="container">
+        <div class="header_logo_content">
+          <div class="header_logo">
+            <div>
+              <img class="header_logo_img" src="../images/logotype.png" alt="Логотип" />
+            </div>
+          </div>
+          <nav>
+            <ul class="nav_links">
+              <li class="mp_nav_li">
+                <p class="mp_nav_link">Catalog</p>
+                <div id="mp_nav_li_dropdown" class="mp_nav_li_dropdown">
+                  <ul class="mp_ul_dropdown">
+                    <li class="mp_li_dropdown"><a href="../pages/reserv1.html">Block 1</a></li>
+                    <li class="mp_li_dropdown"><a href="../pages/reserv.html">Block 2</a></li>
+                    <li class="mp_li_dropdown"><a href="../pages/reserv2.html">Block 3</a></li>
+                    <li class="mp_li_dropdown"><a href="../pages/reserv3.html">Block 4</a></li>
+                    <li class="mp_li_dropdown"><a href="../pages/reserv4.html">Block 5</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a class="mp_nav_link" href="https://cryptolearnnn.blogspot.com/">Discuss</a></li>
+              <li><a class="mp_nav_link" href="./contacts.html">Contacts</a></li>
+              <li><a class="mp_nav_link" href="./offices.html">Our Offices</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header_phone_content">
+          <a class="header_phone" href="tel:380123456313">+(380) 123456313</a>
+          <button class="header_btn">Call us </button>
+          <button id="hamburger" class="hamburger_navbar" onclick="openCloseSideBar()" aria-label="Main Menu">
+            <svg width="43" height="43" viewBox="0 0 100 100">
+              <path class="line line1"
+                d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+              <path class="line line2" d="M 20,50 H 80" />
+              <path class="line line3"
+                d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <aside class="side_bar">
+      <div id="side_bar_overlay" class="side_bar_overlay" onclick="openCloseSideBar()"></div>
+      <div id="side_bar_content" class="side_bar_content">
+        <ul class="side_bar_links">
+          <li class="mp_side_bar_li">
+            <p class="mp_side_bar_link">Catalog</p>
+            <ul class="mp_side_bar_dropdown">
+              <li class="side_bar_li_dropdown"><a href="../pages/reserv1.html">Block 1</a></li>
+              <li class="side_bar_li_dropdown"><a href="../pages/reserv.html">Block 2</a></li>
+              <li class="side_bar_li_dropdown"><a href="../pages/reserv2.html">Block 3</a></li>
+              <li class="side_bar_li_dropdown"><a href="../pages/reserv3.html">Block 4</a></li>
+              <li class="side_bar_li_dropdown"><a href="../pages/reserv4.html">Block 5</a></li>
+            </ul>
+          </li>
+          <li><a class="mp_nav_link" href="https://cryptolearnnn.blogspot.com/">Discuss</a></li>
+
+          <li><a class="mp_side_bar_link" href="#">Contacts</a></li>
+          <li><a class="mp_side_bar_link" href="#">Our Offices</a></li>
+        </ul>
+        <button class="side_bar_btn">Call us</button>
+      </div>
+    </aside>
+
+
+    <main class="main_content">
+      <section class="filter_section">
+        <div class="main_container">
+          <p class="filter_section_title">Our Courses</p>
+
+          <div class="filter_content">
+            <button class="filter_btn active" onclick="cardsFilter(0, 1000, 'Lviv')">Всі</button>
+            <button class="filter_btn" onclick="cardsFilter('Beginner')">Beginner</button>
+            <button class="filter_btn" onclick="cardsFilter(50, 100, 'Intermediate')">Intermediate</button>
+            <button class="filter_btn" onclick="cardsFilter(100, 200, 'Lviv')">Advanced</button>
+
+          </div>
+
+          <div class="rent_car_container">
+             <div class="rent_card">
+              <div class="rent_card_title_image">
+                <p>Block 1</p>
+              </div>
+              <img class="rent_card_image" src="../images/python4.png" width="220" height="120" alt="Smille">
+              <div class="rent_content_list">
+                <div class="list_container">
+                  <img class="rent_list_svg" src="../images/diff.png" width="28" height="28" alt="Benz">
+                  <p class="rent_list_title">Beginner</p>
+                </div>
+                <div class="list_container">
+                  <img class="rent_list_svg" src="../images/time.png" width="28" height="28" alt="Benz">
+                  <p class="rent_list_title">5 weeks</p>
+                </div>
+                <div class="list_container">
+                  <img class="rent_list_svg" src="../images/online.png" width="28" height="28" alt="Benz">
+                  <p class="rent_list_title">Online</p>
+                </div>
+                <div class="list_container">
+                  <img class="rent_list_svg" src="../images/support.png" width="28" height="28" alt="Benz">
+                  <p class="rent_list_title">Included</p>
+                </div>
+              </div>
+              <div class="rent_card_prices">
+                <div class="rent_card_tile">
+                  <p class="rent_card_day">Separate module</p>
+                  <p class="rent_card_price">$9</p>
+                </div>
+                <div class="rent_card_tile">
+                  <p class="rent_card_day">3 months subscription</p>
+                  <p class="rent_card_price">$20</p>
+                </div>
+                <div class="rent_card_tile">
+                  <p class="rent_card_day">6 months subscription</p>
+                  <p class="rent_card_price">$35</p>
+                </div>
+                <div class="rent_card_tile">
+                  <p class="rent_card_day">1 year subscription</p>
+                  <p class="rent_card_price">$50</p>
+                </div>
+              </div>
+
+              <button type="button" class="rent_card_confirm">
+              <a href="../pages/reserv1.html">Reserve a place</a>
+              </button>
+            </div>
+            <div class="rent_card">
+              <div class="rent_card_title_image">
+                <p>Block 2</p>
+              </div>
+              <img class="rent_card_image" src="../images/python.jpeg" width="220"
+                height="120" alt="Smille">
+              <div class="rent_content_list">
+                <div class="list_container">
+                  <img class="rent_list_svg" src="../images/diff.png" width="28" height="28" alt="Benz">
+                  <p class="rent_list_title">Beginner</p>
+                </div>
+                <div class="list_container">
+                  <img class="rent_list_svg" src="../images/time.png" width="28" height="28" alt="Benz">
+                  <p class="rent_list_title">3 weeks</p>
+                </div>
+                <div class="list_container">
+                  <img class="rent_list_svg" src="../images/online.png" width="28" height="28" alt="Benz">
+                  <p class="rent_list_title">Online</p>
+                </div>
+                <div class="list_container">
+                  <img class="rent_list_svg" src="../images/support.png" width="28" height="28" alt="Benz">
+                  <p class="rent_list_title">Included</p>
+                </div>
+              </div>
+              <div class="rent_card_prices">
+                <div class="rent_card_tile">
+                  <p class="rent_card_day">Separate module</p>
+                  <p class="rent_card_price">$9</p>
+                </div>
+                <div class="rent_card_tile">
+                  <p class="rent_card_day">3 months subscription</p>
+                  <p class="rent_card_price">$20</p>
+                </div>
+                <div class="rent_card_tile">
+                  <p class="rent_card_day">6 months subscription</p>
+                  <p class="rent_card_price">$35</p>
+                </div>
+                <div class="rent_card_tile">
+                  <p class="rent_card_day">1 year subscription</p>
+                  <p class="rent_card_price">$50</p>
+                </div>
+              </div>
+
+              <button type="button" class="rent_card_confirm">
+                <a href="../pages/reserv.html">Reserve a place</a>
+                </button>
+            </div>
+            <div class="rent_card">
+              <div class="rent_card_title_image">
+                <p>Block 3</p>
+              </div>
+              <img class="rent_card_image" src="../images/bull.png" width="220"
+                height="120" alt="Smille">
+              <div class="rent_content_list">
+                <div class="list_container">
+                  <img class="rent_list_svg" src="../images/diff.png" width="28" height="28" alt="Benz">
+                  <p class="rent_list_title">Intermediate</p>
+                </div>
+                <div class="list_container">
+                  <img class="rent_list_svg" src="../images/time.png" width="28" height="28" alt="Benz">
+                  <p class="rent_list_title">3 weeks</p>
+                </div>
+                <div class="list_container">
+                  <img class="rent_list_svg" src="../images/online.png" width="28" height="28" alt="Benz">
+                  <p class="rent_list_title">Online</p>
+                </div>
+                <div class="list_container">
+                  <img class="rent_list_svg" src="../images/support.png" width="28" height="28" alt="Benz">
+                  <p class="rent_list_title">Included</p>
+                </div>
+              </div>
+              <div class="rent_card_prices">
+                <div class="rent_card_tile">
+                  <p class="rent_card_day">Separate module</p>
+                  <p class="rent_card_price">$9</p>
+                </div>
+                <div class="rent_card_tile">
+                  <p class="rent_card_day">3 months subscription</p>
+                  <p class="rent_card_price">$20</p>
+                </div>
+                <div class="rent_card_tile">
+                  <p class="rent_card_day">6 months subscription</p>
+                  <p class="rent_card_price">$35</p>
+                </div>
+                <div class="rent_card_tile">
+                  <p class="rent_card_day">1 year subscription</p>
+                  <p class="rent_card_price">$50</p>
+                </div>
+              </div>
+              <button type="button" class="rent_card_confirm">
+                <a href="../pages/reserv2.html">Reserve a place</a>
+                </button>
+            </div>
+            <div class="rent_card">
+              <div class="rent_card_title_image">
+                <p>Block 4</p>
+              </div>
+              <img class="rent_card_image" src="../images/psycho.png" width="220"
+                height="120" alt="Smille">
+              <div class="rent_content_list">
+                <div class="list_container">
+                  <img class="rent_list_svg" src="../images/diff.png" width="28" height="28" alt="Benz">
+                  <p class="rent_list_title">Advanced</p>
+                </div>
+                <div class="list_container">
+                  <img class="rent_list_svg" src="../images/time.png" width="28" height="28" alt="Benz">
+                  <p class="rent_list_title">4 weeks</p>
+                </div>
+                <div class="list_container">
+                  <img class="rent_list_svg" src="../images/online.png" width="28" height="28" alt="Benz">
+                  <p class="rent_list_title">Offline</p>
+                </div>
+                <div class="list_container">
+                  <img class="rent_list_svg" src="../images/support.png" width="28" height="28" alt="Benz">
+                  <p class="rent_list_title">Included</p>
+                </div>
+              </div>
+              <div class="rent_card_prices">
+                <div class="rent_card_tile">
+                  <p class="rent_card_day">Separate module</p>
+                  <p class="rent_card_price">$9</p>
+                </div>
+                <div class="rent_card_tile">
+                  <p class="rent_card_day">3 months subscription</p>
+                  <p class="rent_card_price">$20</p>
+                </div>
+                <div class="rent_card_tile">
+                  <p class="rent_card_day">6 months subscription</p>
+                  <p class="rent_card_price">$35</p>
+                </div>
+                <div class="rent_card_tile">
+                  <p class="rent_card_day">1 year subscription</p>
+                  <p class="rent_card_price">$50</p>
+                </div>
+              </div>
+
+              <button type="button" class="rent_card_confirm">
+                <a href="../pages/reserv3.html">Reserve a place</a>
+                </button>
+            </div>
+            <div class="rent_card">
+              <div class="rent_card_title_image">
+                <p>Block 5</p>
+              </div>
+              <img class="rent_card_image" src="../images/nft.png" width="220"
+                height="120" alt="Smille">
+              <div class="rent_content_list">
+                <div class="list_container">
+                  <img class="rent_list_svg" src="../images/diff.png" width="28" height="28" alt="Benz">
+                  <p class="rent_list_title">Intermediate</p>
+                </div>
+                <div class="list_container">
+                  <img class="rent_list_svg" src="../images/time.png" width="28" height="28" alt="Benz">
+                  <p class="rent_list_title">5 weeks</p>
+                </div>
+                <div class="list_container">
+                  <img class="rent_list_svg" src="../images/online.png" width="28" height="28" alt="Benz">
+                  <p class="rent_list_title">Offline</p>
+                </div>
+                <div class="list_container">
+                  <img class="rent_list_svg" src="../images/support.png" width="28" height="28" alt="Benz">
+                  <p class="rent_list_title">Included</p>
+                </div>
+              </div>
+              <div class="rent_card_prices">
+                <div class="rent_card_tile">
+                  <p class="rent_card_day">Separate module</p>
+                  <p class="rent_card_price">$9</p>
+                </div>
+                <div class="rent_card_tile">
+                  <p class="rent_card_day">3 months subscription</p>
+                  <p class="rent_card_price">$20</p>
+                </div>
+                <div class="rent_card_tile">
+                  <p class="rent_card_day">6 months subscription</p>
+                  <p class="rent_card_price">$35</p>
+                </div>
+                <div class="rent_card_tile">
+                  <p class="rent_card_day">1 year subscription</p>
+                  <p class="rent_card_price">$50</p>
+                </div>
+              </div>
+              <button type="button" class="rent_card_confirm">
+                <a href="../pages/reserv4.html">Reserve a place</a>
+                </button>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+          <div class="footer__top">
+              <div class="company__info">
+                  <h2 class="company__logo">CryptoLearn Company</h2>
+                  <p class="company__description">
+                    With a team of experienced educators and industry experts, the company offers a comprehensive curriculum that covers all aspects of the crypto landscape, from the basics of blockchain technology to advanced trading strategies.
+                  </p>
+                  <ul class="footer__list">
+                      <li class="footer__list-item">
+                          <a href="#" class="footer__list-link">
+                              <i class="ri-facebook-circle-line"></i>
+                          </a>
+                      </li>
+                      <li class="footer__list-item">
+                          <a href="#" class="footer__list-link">
+                              <i class="ri-instagram-line"></i>
+                          </a>
+                      </li>
+                      <li class="footer__list-item">
+                          <a href="#" class="footer__list-link">
+                              <i class="ri-twitter-line"></i>
+                          </a>
+                      </li>
+                  </ul>
+                  <span class="copyright">&copy;2023 CryptoLearn.All rights reserved.</span>
+              </div>
+
+              <div>
+                <h6 class="footer__title">Beginner Courses</h6>
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a href="./reserv1.html" class="footer__list-link">Block 1</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="./reserv.html" class="footer__list-link">Block 2</a>
+                    </li>
+                    <li class="footer__list-item">
+                      <a href="https://www.instagram.com/" class="footer__list-link">Instagram</a>
+                    </li> 
+                    
+                </ul>
+            </div>
+
+            <div>
+                <h6 class="footer__title">Intermediate Courses</h6>
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a href="./reserv2.html" class="footer__list-link">Block 3</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="./reserv4.html" class="footer__list-link">Block 5</a>
+                    </li>
+                    <li class="footer__list-item">
+                      <a href="https://www.twitter.com/" class="footer__list-link">Twitter</a>
+                    </li> 
+                </ul>
+            </div>
+
+            <div>
+                <h6 class="footer__title">Advanced Courses</h6>
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a href="./reserv3.html" class="footer__list-link">Block 4</a>
+                        <li class="footer__list-item">
+                          <a href="https://www.youtube.com/" class="footer__list-link">Youtube</a>
+                        </li> 
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+  </div>
+
+  <script src="../js/index.js"></script>
+  <script src="../js/rent.js?version=3.8.8.3"></script>
+</body>
+
+</html>
