@@ -6,6 +6,7 @@ const body = document.getElementById("body");
 const svg = document.getElementById("hamburger");
 let sideBarOpened = false;
 const pathname = window.location.pathname;
+
 console.log(pathname);
 if (
   pathname === "/RentCardemo/pages/rent.html" ||

@@ -9,10 +9,23 @@ const nameError = document.getElementById("callback_name_error")
 const telError = document.getElementById("callback_tell_error")
 const emailError = document.getElementById("callback_email_error")
 const textareaError = document.getElementById("callback_textarea_error")
+var rbut = document.getElementById("rbut");
 
-form.addEventListener("submit" , (e) => {
-    ValidateForm(e);
-})
+rbut.addEventListener("click",function(){
+    fetch("http://localhost:8888/back/index.php", {
+        method: 'POST',
+        header : {
+          'Content-Type': 'application/x-www-form-urlenoded',
+        },
+        body: JSON.stringify({ action: 1 })
+        })
+        .then (response => response.text())
+        .then (response => {
+          console.log(response);
+        })
+      }
+)
+
 
 function ValidateForm(e)
 {

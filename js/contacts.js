@@ -72,3 +72,4 @@ emailInput.addEventListener("focus", () => {
 textareaInput.addEventListener("focus", () => {
     valid(textareaInput, textareaError)
 })
+
