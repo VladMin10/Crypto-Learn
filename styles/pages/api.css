@@ -1,0 +1,73 @@
+h1 {
+    color: white;
+    font-family: Ubuntu;
+    text-align: center;
+    text-transform: uppercase;
+  }
+#table-header {
+    font-family: ubuntu;
+    margin-bottom: 2%;
+  }
+  #table {
+    height: 75vh; /* Максимальна висота таблиці */
+    overflow-y: scroll;
+    margin: 0 auto;
+    margin-bottom: 3%;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  table {
+    width: 99%;
+    color: white;
+    margin: 0 auto;
+    overflow-x: auto;
+    background-color: #171717;
+    border-collapse: collapse;
+  }
+  table thead th {
+    top: 0;
+    height: 13vh;
+    position: sticky;
+    background-color: #171717;
+    border-collapse: collapse;
+    z-index: 9999;
+  }
+  thead {
+    position: sticky;
+    top: 0;
+    background: white;
+  }
+  .border {
+    height: 1px;
+    padding: 0;
+    background-color: white;
+  }
+  .head {
+    text-transform: uppercase;
+  }
+  th,
+  td {
+    padding: 0.7%;
+    text-align: center;
+  }
+  .red {
+    color: rgb(245, 8, 8);
+  }
+  .green {
+    color: rgb(8, 161, 8);
+  }
+  table img {
+    width: 20%;
+  }
+  .main {
+    margin-top: 1%;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    line-height: 1.5em;
+  }
+  
+  

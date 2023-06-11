@@ -70,6 +70,40 @@ i {
 .copyright {
   margin-top: auto;
 }
+.footer__list-item {
+  display: flex;
+  align-items: center;
+}
+
+.footer__list-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.footer__list-link i {
+  margin-right: 5px;
+}
+.footer__list-item {
+  display: flex;
+  align-items: center;
+}
+
+.footer__list-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.footer__list-link i {
+  margin-left: 5px;
+}
+.footer__list-item {
+  display: flex;
+  align-items: center;
+}
+
+
 @media screen and (min-width: 40em) {
   .company__info {
       grid-column: span 2;
