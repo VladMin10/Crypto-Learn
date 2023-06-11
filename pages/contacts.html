@@ -15,8 +15,9 @@
   <link rel="stylesheet" href="/styles/pages/contacts.css">
   <link rel="stylesheet" href="/styles/global/media.css">
   <link rel="stylesheet" href="/styles/animations/headerHamburger.css">
+  <link rel="stylesheet" href="../fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
-
 <body id="body">
   <div class="wrapper">
     <header id="header">
@@ -24,11 +25,14 @@
         <div class="header_logo_content">
           <div class="header_logo">
             <div>
-              <img class="header_logo_img" src="../images/logotype.png" alt="Логотип" />
+              <a href="home.html">
+                <img src="../images/logotype.png" class="header_logo_img" alt="Логотип">
+              </a>
             </div>
           </div>
           <nav>
             <ul class="nav_links">
+              <li><a class="mp_nav_link" href="./api.html">Markets</a></li>
               <li class="mp_nav_li">
                 <p class="mp_nav_link">Catalog</p>
                 <div id="mp_nav_li_dropdown" class="mp_nav_li_dropdown">
@@ -67,6 +71,7 @@
       <div id="side_bar_overlay" class="side_bar_overlay" onclick="openCloseSideBar()"></div>
       <div id="side_bar_content" class="side_bar_content">
         <ul class="side_bar_links">
+          <li><a class="mp_nav_link" href="./api.html">Markets</a></li>
           <li class="mp_side_bar_li">
             <p class="mp_side_bar_link">Catalog</p>
             <ul class="mp_side_bar_dropdown">
@@ -102,18 +107,18 @@
               <p class="form_arrow_image_title">For detailed information or in case of any questions, fill out the feedback form and we will contact you</p>
               <img class="form_arrow_image" src="/images/arrow.png" alt="Arrow">
             </div>
-            <form id="callback_form" class="callback_form">
+            <form action="connect.php" method = "post" id="callback_form" class="callback_form" >
               <p class="callback_form_title">Contact us</p>
-              <input id="callback_input_name" type="text" class="callback_input" placeholder="Name"
-                autocomplete="username">
+              <input id="callback_input_name" type="Name" class="callback_input" placeholder="Name"
+                autocomplete="username" name="Name">
               <p id="callback_name_error" class="callback_error">error</p>
-              <input id="callback_input_tel" type="tel" class="callback_input" placeholder="Phone number" autocomplete="tel">
+              <input id="callback_input_tel" type="Number" class="callback_input" placeholder="Number" autocomplete="tel" name="Number">
               <p id="callback_tell_error" class="callback_error">error</p>
-              <input id="callback_input_email" type="text" class="callback_input" placeholder="Email"
-                autocomplete="email">
+              <input id="callback_input_email" type="Email" class="callback_input" placeholder="Email"
+                autocomplete="email" name="Email">
               <p id="callback_email_error" class="callback_error">error</p>
               <textarea id="callback_input_textarea" class="callback_input" rows="7"
-                placeholder="Enter a message"></textarea>
+                placeholder="Enter a message" value = "Message"> </textarea>
               <p id="callback_textarea_error" class="callback_error">error</p>
               <button type="submit" class="callback_button">Send</button>
             </form>
@@ -150,51 +155,61 @@
               </div>
 
               <div>
-                <h6 class="footer__title">Beginner Courses</h6>
-                <ul class="footer__list">
-                    <li class="footer__list-item">
-                        <a href="./reserv1.html" class="footer__list-link">Block 1</a>
+                  <h6 class="footer__title">Beginner Courses</h6>
+                  <ul class="footer__list">
+                      <li class="footer__list-item">
+                          <a href="./reserv1.html" class="footer__list-link">Block 1</a>
+                      </li>
+                      <li class="footer__list-item">
+                          <a href="./reserv.html" class="footer__list-link">Block 2</a>
+                      </li>
+                      <li class="footer__list-item">
+                        <a href="https://www.instagram.com/" class="footer__list-link">
+                            Instagram <i class="fab fa-instagram"></i>
+                        </a>
                     </li>
-                    <li class="footer__list-item">
-                        <a href="./reserv.html" class="footer__list-link">Block 2</a>
+                      
+                  </ul>
+              </div>
+
+              <div>
+                  <h6 class="footer__title">Intermediate Courses</h6>
+                  <ul class="footer__list">
+                      <li class="footer__list-item">
+                          <a href="./reserv2.html" class="footer__list-link">Block 3</a>
+                      </li>
+                      <li class="footer__list-item">
+                          <a href="./reserv4.html" class="footer__list-link">Block 5</a>
+                      </li>
+                      <li class="footer__list-item">
+                        <a href="https://www.twitter.com/" class="footer__list-link">
+                            Twitter <i class="fab fa-twitter"></i>
+                        </a>
                     </li>
-                    <li class="footer__list-item">
-                      <a href="https://www.instagram.com/" class="footer__list-link">Instagram</a>
-                    </li> 
                     
-                </ul>
-            </div>
+                  </ul>
+              </div>
 
-            <div>
-                <h6 class="footer__title">Intermediate Courses</h6>
-                <ul class="footer__list">
-                    <li class="footer__list-item">
-                        <a href="./reserv2.html" class="footer__list-link">Block 3</a>
-                    </li>
-                    <li class="footer__list-item">
-                        <a href="./reserv4.html" class="footer__list-link">Block 5</a>
-                    </li>
-                    <li class="footer__list-item">
-                      <a href="https://www.twitter.com/" class="footer__list-link">Twitter</a>
-                    </li> 
-                </ul>
-            </div>
-
-            <div>
-                <h6 class="footer__title">Advanced Courses</h6>
-                <ul class="footer__list">
-                    <li class="footer__list-item">
-                        <a href="./reserv3.html" class="footer__list-link">Block 4</a>
-                        <li class="footer__list-item">
-                          <a href="https://www.youtube.com/" class="footer__list-link">Youtube</a>
+              <div>
+                  <h6 class="footer__title">Advanced Courses</h6>
+                  <ul class="footer__list">
+                      <li class="footer__list-item">
+                          <a href="./reserv3.html" class="footer__list-link">Block 4</a>
                         </li> 
-                    </li>
-                    
-                </ul>
-            </div>
-        </div>
-    </div>
-</footer>
+                        <li class="footer__list-item">
+                          <a href="./api.html" class="footer__list-link">Markets</a> 
+                        </li> 
+                        <li class="footer__list-item">
+                          <a href="https://www.youtube.com/" class="footer__list-link">
+                           Youtube<i class="fab fa-youtube"></i>
+                          </a>
+                      </li>
+                      
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </footer>
 </div>
     <script src="/js/contacts.js"></script>
     <script src="/js/index.js"></script>

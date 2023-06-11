@@ -6,6 +6,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/pages/api.css">
   <link rel="stylesheet" href="/styles/global/normalize.css">
   <link rel="stylesheet" href="/styles/global/main.css">
   <link rel="stylesheet" href="/styles/global/variables.css">
@@ -84,6 +85,7 @@
             </ul>
           </li>
           <li><a class="mp_nav_link" href="https://cryptolearnnn.blogspot.com/">Discuss</a></li>
+
           <li><a class="mp_side_bar_link" href="#">Contacts</a></li>
           <li><a class="mp_side_bar_link" href="#">Our Offices</a></li>
         </ul>
@@ -92,12 +94,28 @@
     </aside>
 
     <main class="main_content">
-      <section class="map_container">
-        <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1_cE_7W5iCOEr35ojwRxttqwuQ-BF-IY&ehbc=2E312F" height="550" 
-          style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      </section>
+        <h1 id="table-header">MOST POPULAR CRYPTOCURRENCIES</h1>
+        <div id="table">
+          <table>
+            <thead>
+              <tr>
+                <th class="border" colspan="6"></th>
+              </tr>
+              <tr class="head">
+                <th>Cryptocurrency</th>
+                <th>Logo</th>
+                <th>Price (USD)</th>
+                <th>24h price change</th>
+              </tr>
+              <tr>
+                <th class="border" colspan="6"></th>
+              </tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+          </table>
+        </div>
+ 
     </main>
-
     <footer class="footer">
       <div class="footer__container">
           <div class="footer__top">
@@ -182,8 +200,23 @@
           </div>
       </div>
   </footer>
-    <script src="/js/contacts.js"></script>
-    <script src="/js/index.js"></script>
+</div>
+<script>
+    const theBody = document.querySelector("body");
+    const openNav = document.querySelector(".menu-bar button");
+    const closeNav = document.querySelector(".close-nav button");
+    const Navbar = document.querySelector(".navbar");
+
+    function showHide() {
+      Navbar.classList.toggle("show");
+    }
+
+    openNav.onclick = showHide;
+    closeNav.onclick = showHide;
+  </script>
+  <!-- Table Info Script -->
+  <script src="/js/api.js"></script>
+  <script src="/js/index.js"></script>
 </body>
 
 </html>

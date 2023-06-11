@@ -16,6 +16,8 @@
   <link rel="stylesheet" href="/styles/global/media.css">
   <link rel="stylesheet" href="/styles/animations/headerHamburger.css">
   <link rel="stylesheet" href="/styles/pages/home.css">
+  <link rel="stylesheet" href="../fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <div><script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
     <link
     href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
@@ -47,11 +49,14 @@
         <div class="header_logo_content">
           <div class="header_logo">
             <div>
-              <img class="header_logo_img" src="../images/logotype.png" alt="Логотип" />
+              <a href="home.html">
+                <img src="../images/logotype.png" class="header_logo_img" alt="Логотип">
+              </a>
             </div>
           </div>
           <nav>
             <ul class="nav_links">
+              <li><a class="mp_nav_link" href="./api.html">Markets</a></li>
               <li class="mp_nav_li">
                 <p class="mp_nav_link">Catalog</p>
                 <div id="mp_nav_li_dropdown" class="mp_nav_li_dropdown">
@@ -65,6 +70,7 @@
                 </div>
               </li>
               <li><a class="mp_nav_link" href="https://cryptolearnnn.blogspot.com/">Discuss</a></li>
+              
               <li><a class="mp_nav_link" href="./contacts.html">Contacts</a></li>
               <li><a class="mp_nav_link" href="./offices.html">Our Offices</a></li>
             </ul>
@@ -86,11 +92,11 @@
       </div>
     </header>
 
-
     <aside class="side_bar">
       <div id="side_bar_overlay" class="side_bar_overlay" onclick="openCloseSideBar()"></div>
       <div id="side_bar_content" class="side_bar_content">
         <ul class="side_bar_links">
+          <li><a class="mp_nav_link" href="./api.html">Markets</a></li>
           <li class="mp_side_bar_li">
             <p class="mp_side_bar_link">Catalog</p>
             <ul class="mp_side_bar_dropdown">
@@ -99,6 +105,7 @@
               <li class="side_bar_li_dropdown"><a href="../pages/reserv2.html">Block 3</a></li>
               <li class="side_bar_li_dropdown"><a href="../pages/reserv3.html">Block 4</a></li>
               <li class="side_bar_li_dropdown"><a href="../pages/reserv4.html">Block 5</a></li>
+            </ul>
           </li>
           <li><a class="mp_nav_link" href="https://cryptolearnnn.blogspot.com/">Discuss</a></li>
           <li><a class="mp_side_bar_link" href="#">Contacts</a></li>
@@ -171,20 +178,24 @@
                 Or sign up with e-mail
               </div>
             </div>
-
-            <div class="mx-auto max-w-xs">
+            <form action = "reserve.php" method="POST"> 
+              <div class="mx-auto max-w-xs">
               <input
-                class="w-full px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white"
+                class="w-full px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white"required
                 type="email"
                 placeholder="Email"
+                name ="email"
+                id = "email"
               />
               <input
-                class="w-full px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white mt-5"
+                class="w-full px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white mt-5"required
                 type="password"
                 placeholder="Password"
+                name ="pass"
+                id = "pass"
               />
               <button
-                class="mt-5 tracking-wide font-semibold bg-indigo-500 text-gray-100 w-full py-4 rounded-lg hover:bg-indigo-700 transition-all duration-300 ease-in-out flex items-center justify-center focus:shadow-outline focus:outline-none"
+                class="mt-5 tracking-wide font-semibold bg-indigo-500 text-gray-100 w-full py-4 rounded-lg hover:bg-indigo-700 transition-all duration-300 ease-in-out flex items-center justify-center focus:shadow-outline focus:outline-none"id = "rbut"
               >
                 <svg
                   class="w-6 h-6 -ml-2"
@@ -202,6 +213,7 @@
                   Reserve
                 </span>
               </button>
+            </form>
               <p class="mt-6 text-xs text-gray-600 text-center">
                 I agree to abide by CryptoLearn's
                 <a href="#" class="border-b border-gray-500 border-dotted">
@@ -224,7 +236,6 @@
       </div>
     </div>
     </main>
-
     <footer class="footer">
       <div class="footer__container">
           <div class="footer__top">
@@ -254,51 +265,61 @@
               </div>
 
               <div>
-                <h6 class="footer__title">Beginner Courses</h6>
-                <ul class="footer__list">
-                    <li class="footer__list-item">
-                        <a href="./reserv1.html" class="footer__list-link">Block 1</a>
+                  <h6 class="footer__title">Beginner Courses</h6>
+                  <ul class="footer__list">
+                      <li class="footer__list-item">
+                          <a href="./reserv1.html" class="footer__list-link">Block 1</a>
+                      </li>
+                      <li class="footer__list-item">
+                          <a href="./reserv.html" class="footer__list-link">Block 2</a>
+                      </li>
+                      <li class="footer__list-item">
+                        <a href="https://www.instagram.com/" class="footer__list-link">
+                            Instagram <i class="fab fa-instagram"></i>
+                        </a>
                     </li>
-                    <li class="footer__list-item">
-                        <a href="./reserv.html" class="footer__list-link">Block 2</a>
+                      
+                  </ul>
+              </div>
+
+              <div>
+                  <h6 class="footer__title">Intermediate Courses</h6>
+                  <ul class="footer__list">
+                      <li class="footer__list-item">
+                          <a href="./reserv2.html" class="footer__list-link">Block 3</a>
+                      </li>
+                      <li class="footer__list-item">
+                          <a href="./reserv4.html" class="footer__list-link">Block 5</a>
+                      </li>
+                      <li class="footer__list-item">
+                        <a href="https://www.twitter.com/" class="footer__list-link">
+                            Twitter <i class="fab fa-twitter"></i>
+                        </a>
                     </li>
-                    <li class="footer__list-item">
-                      <a href="https://www.instagram.com/" class="footer__list-link">Instagram</a>
-                    </li> 
                     
-                </ul>
-            </div>
+                  </ul>
+              </div>
 
-            <div>
-                <h6 class="footer__title">Intermediate Courses</h6>
-                <ul class="footer__list">
-                    <li class="footer__list-item">
-                        <a href="./reserv2.html" class="footer__list-link">Block 3</a>
-                    </li>
-                    <li class="footer__list-item">
-                        <a href="./reserv4.html" class="footer__list-link">Block 5</a>
-                    </li>
-                    <li class="footer__list-item">
-                      <a href="https://www.twitter.com/" class="footer__list-link">Twitter</a>
-                    </li> 
-                </ul>
-            </div>
-
-            <div>
-                <h6 class="footer__title">Advanced Courses</h6>
-                <ul class="footer__list">
-                    <li class="footer__list-item">
-                        <a href="./reserv3.html" class="footer__list-link">Block 4</a>
-                        <li class="footer__list-item">
-                          <a href="https://www.youtube.com/" class="footer__list-link">Youtube</a>
+              <div>
+                  <h6 class="footer__title">Advanced Courses</h6>
+                  <ul class="footer__list">
+                      <li class="footer__list-item">
+                          <a href="./reserv3.html" class="footer__list-link">Block 4</a>
                         </li> 
-                    </li>
-                    
-                </ul>
-            </div>
-        </div>
-    </div>
-</footer>
+                        <li class="footer__list-item">
+                          <a href="./api.html" class="footer__list-link">Markets</a> 
+                        </li> 
+                        <li class="footer__list-item">
+                          <a href="https://www.youtube.com/" class="footer__list-link">
+                           Youtube<i class="fab fa-youtube"></i>
+                          </a>
+                      </li>
+                      
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </footer>
   </div>
 
   <script src="/js/index.js"></script>
